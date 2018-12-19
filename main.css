@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+ul li a {
+    color: #FFF;
+}
+.navigation-bar {
+    background-color: #161718;
+    overflow: hidden;
+}
+.left-menu, .left-menu ul li {
+    float: left;
+}
+.right-menu {
+    float: right;
+}
+.navigation-bar .left-menu {
+    margin: 0 0 0 20px;
+}
+.navigation-bar .left-menu ul li {
+    display: block;
+    margin: 10px 20px;
+}
+.navigation-bar .right-menu {
+    margin: 0 40px 0 0;
+    padding: 10px 0 0 0;
+}
+.navigation-bar .right-menu a {
+    display: block;
+    float: left;
+    margin: 0 150px 0 0;
+}
+.navigation-bar .right-menu img {
+    height: auto;
+    width: 20px;
+}
+.navigation-bar .right-menu ul li {
+    display: block;
+    float: left;
+    margin: 10px 20px;
+}
+.second-navigation-bar {
+    background-color: #232425;
+    border-bottom: 1px solid #1D1E1F;
+    overflow: hidden;
+}
+.second-navigation-bar .left-menu {
+    display: flex;
+}
+.second-navigation-bar .left-menu div {
+    border-right: 1px solid #1D1E1F;
+    text-align: center;
+    padding: 10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+.second-navigation-bar .left-menu div:last-child {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.second-navigation-bar .right-menu {
+    border-right: 1px solid #1D1E1F;
+    border-left: 1px solid #1D1E1F;
+    margin: 0 100px 0 auto;
+    padding: 0 10px 0 10px;
+}
+.second-navigation-bar .right-menu ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.second-navigation-bar .right-menu ul li {
+    display: block;
+    float: left;
+    padding: 8px;
+}
+.page {
+    background-color: #222324;
+    color: #C1C2C3;
+    padding: 50px 200px;
+    height: 100vh;
+}
+p {
+    margin: 20px 0;
+}
+.lists-group {
+    margin: 50px 0;
+    overflow: hidden;
+}
+.lists-group ul {
+    float: left;
+    margin: 0 100px 0 0;
+}
+.lists-group ul li + li {
+    margin: 10px 0;
+}
+.rounded-box {
+    background-color: #222324;
+    border: 1px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.header {
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+    padding: 10px 40px;
+    width: 100%;
+}
+.header ul li {
+    float: left;
+    margin-right: 25px;
+}
+.header ul li:first-child {
+    margin-right: 100px;
+}
+.content {
+    padding: 40px;
+    overflow: auto;
+}
+.content ul li {
+    float: left;
+    margin-right: 25px;
+}
+.dropdown-menu {
+    background-color: #232425;
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+.show-submenu:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu ul li {
+    padding: 10px;
+    display: block;
+    float: none;
+}
+.dropdown-menu ul li:hover {
+    background-color: #1A1B1C;
+}
+/*
+.content ul li ul {
+    background-color: pink;
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+.content ul li ul li {
+    float: none;
+}
+.content ul li:hover {
+    background-color: #141516;
+    position: relative;
+}
+.content ul li:hover ul {
+    left: 0;
+    top: 30px;
+    background-color: wheat;
+}
+/*
+.content ul li:hover ul {
+    position: relative;
+    left: 0;
+    top: 10px;
+    float: none;
+}
+.dropdown-menu:hover {
+}*/
+.header ul li:nth-child(2) {
+    display: inline;
+    position: relative;
+}
+.header ul li:nth-child(2):before {
+    content: "";
+    border-bottom: 2px solid #DAB068;
+    height: 1px;
+    bottom: 0;
+    top: 20px;
+    left: 30%;
+    position: absolute;
+    width: 40%;
+}
+.chevron::before {
+	border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    border-color: #FFF;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
+}
+.chevron.bottom:before {
+	top: 0;
+	transform: rotate(135deg);
+}
+.brown-color-text {
+    color: #B0887B;
+}
+h1, .yellow-color-text {
+    color: #DAB068;
+}
+.grey-color-text {
+    color: #6B6C6D;
+}
+.whitish-color-text {
+    color: #CFD0D1;
+}
+.white-color-text {
+    color: #FFF;
+}
